@@ -29,7 +29,7 @@ function Signup() {
   const [PasswordError, setPasswordError] = useState("");
   const [NameError, setNameError] = useState("");
 
-  document.title = "Amazon"
+  document.title = "Waste Product"
 
   const notify1 = () =>
     toast.error("Please fill-up all the credentials properly!", {
@@ -132,7 +132,7 @@ function Signup() {
       <div className="signin-page">
         <div className="login-navbar">
           <div className="main-logo">
-            <img src={Logo} className="amazon-logo" />
+           
           </div>
           <div className="signup">
             <Link to="/">

@@ -99,8 +99,7 @@ function Navbar() {
                 navigate({ pathname: "/home" });
               }
             }}
-            src={Logo}
-            className="logo"
+            
           />
           <img
             onClick={() => {
@@ -119,8 +118,6 @@ function Navbar() {
                 navigate({ pathname: "/home" });
               }
             }}
-            src={LogoSmall}
-            className="logo2"
           />
 
           <div className="search-bar">

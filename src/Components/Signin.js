@@ -25,7 +25,7 @@ function Signin() {
   const [bgLoaded, setBgLoaded] = useState(false);
   const navigate = useNavigate();
 
-  document.title = "Amazon"
+  document.title = "Waste Product"
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -94,7 +94,7 @@ function Signin() {
       <div className="signin-page">
         <div className="login-navbar">
           <div className="main-logo">
-            <img src={Logo} className="amazon-logo" />
+           
           </div>
           <div className="signup">
             <Link to="/signup">
