@@ -12,6 +12,9 @@ import "./navbar.css";
 import { app } from "../Firebase";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import swal from "sweetalert";
+import AddItem from "../additem";
+
+
 
 const auth = getAuth(app);
 
@@ -80,6 +83,7 @@ function Navbar() {
 
   return (
     <>
+   
       <div className="navbar">
         <div className="left-section">
           <img
@@ -101,6 +105,7 @@ function Navbar() {
             }}
             
           />
+    
           <img
             onClick={() => {
               if (window.location.href.includes("/payment")) {
@@ -133,6 +138,7 @@ function Navbar() {
             </button>
           </div>
         </div>
+      <button onClick={()=>navigate('/additem')}>ADD ITEM</button>
         <div className="right-section">
           <img
             onClick={() => {
@@ -196,7 +202,7 @@ function Navbar() {
           >
             {totalQuantity}
           </p>
-
+           
           <img
             onClick={() => {
               if (window.location.href.includes("/payment")) {
