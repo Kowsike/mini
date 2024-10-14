@@ -139,7 +139,21 @@ function Navbar() {
             </button>
           </div>
         </div>
-      <button onClick={()=>navigate('/additem')}>ADD ITEM</button>
+        <button 
+  onClick={() => navigate('/additem')} 
+  style={{
+    backgroundColor: 'orange',
+    color: 'white',
+    border: '50px',
+    borderRadius: '10px 30px',
+    cursor: 'pointer',
+    marginLeft: '40%', // This pushes the button to the right
+    display: 'block', // Ensure it behaves like a block element
+  }}
+>
+  ADD ITEM
+</button>
+
         <div className="right-section">
           <img
             onClick={() => {
