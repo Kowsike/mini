@@ -144,8 +144,9 @@ function Navbar() {
   style={{
     backgroundColor: 'orange',
     color: 'white',
-    border: '50px',
-    borderRadius: '10px 30px',
+    border: 'none',
+    borderRadius: '8px',
+    padding:'10px 20px',
     cursor: 'pointer',
     marginLeft: '40%', // This pushes the button to the right
     display: 'block', // Ensure it behaves like a block element
